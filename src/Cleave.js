@@ -23,13 +23,13 @@ var Cleave = function (element, opts) {
     }
 
     if (!owner.element) {
-        throw new Error('[cleave.js] Please check the element');
+        throw new Error('[cleave] Please check the element');
     }
 
     if (hasMultipleElements) {
       try {
         // eslint-disable-next-line
-        console.warn('[cleave.js] Multiple input fields matched, cleave.js will only take the first one.');
+        console.warn('[cleave] Multiple input fields matched, cleave will only take the first one.');
       } catch (e) {
         // Old IE
       }
@@ -162,7 +162,7 @@ Cleave.prototype = {
                 pps.delimiter
             );
         } catch (ex) {
-            throw new Error('[cleave.js] Please include phone-type-formatter.{country}.js lib');
+            throw new Error('[cleave] Please include phone-type-formatter.{country}.js lib');
         }
     },
 

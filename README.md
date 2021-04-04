@@ -75,8 +75,8 @@ More examples: [the demo page](http://nosir.github.io/cleave.js/)
 
 #### CommonJS
 ```js
-var Cleave = require('cleave.js');
-require('cleave.js/dist/addons/cleave-phone.{country}');
+var Cleave = require('cleave');
+require('cleave/dist/addons/cleave-phone.{country}');
 
 var cleave = new Cleave(...)
 ```
@@ -84,7 +84,7 @@ var cleave = new Cleave(...)
 #### AMD
 
 ```js
-require(['cleave.js/dist/cleave.min', 'cleave.js/dist/addons/cleave-phone.{country}'], function (Cleave) {
+require(['cleave/dist/cleave.min', 'cleave/dist/addons/cleave-phone.{country}'], function (Cleave) {
     var cleave = new Cleave(...)
 });
 ```
@@ -92,11 +92,11 @@ require(['cleave.js/dist/cleave.min', 'cleave.js/dist/addons/cleave-phone.{count
 #### ES Module
 ```js
 // Rollup, WebPack
-import Cleave from 'cleave.js';
+import Cleave from 'cleave';
 var cleave = new Cleave(...)
 
 // Browser
-import Cleave from 'node_modules/cleave.js/dist/cleave-esm.min.js';
+import Cleave from 'node_modules/cleave/dist/cleave-esm.min.js';
 var cleave = new Cleave(...)
 ```
 
@@ -105,13 +105,13 @@ var cleave = new Cleave(...)
 Types are contributed by the community and are available via `npm install --save-dev @types/cleave.js`. Once installed, you can import Cleave like the following:
 
 ```ts
-import Cleave = require('cleave.js');
+import Cleave = require('cleave');
 ```
 
 Types for the React-component are also available and can be imported in the same way.
 
 ```ts
-import Cleave = require('cleave.js/react');
+import Cleave = require('cleave/react');
 ```
 
 ## ReactJS component usage
@@ -120,7 +120,7 @@ import Cleave = require('cleave.js/react');
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Cleave from 'cleave.js/react';
+import Cleave from 'cleave/react';
 ```
 
 Then in JSX:
@@ -185,7 +185,7 @@ First include the directive module:
 And in your model:
 
 ```js
-angular.module('app', ['cleave.js'])
+angular.module('app', ['cleave'])
 
 .controller('AppController', function($scope) {
     $scope.onCreditCardTypeChanged = function(type) {

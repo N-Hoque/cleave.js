@@ -1,4 +1,4 @@
-angular.module('cleave.js', [])
+angular.module('cleave', [])
     .directive('cleave', function () {
         return {
             restrict: 'A',

@@ -4,3 +4,9 @@
 /local
 /issues
 npm-debug.log
+
+
+# Added by cargo
+
+/target
+Cargo.lock
